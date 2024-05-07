@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="icon" href="img/2397697.png">
+    <script src="https://kit.fontawesome.com/068195b342.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <a href="index.html" class="logo_link">
+                <img src="img/logo plant.svg" alt="">
+            </a>
+            <form action="" class="search_form">
+                <input type="text" name="search" value="" class="search" placeholder="What are you looking for?" />
+                <button type="submit" class="search_button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="header_right">
+                <a href="" class="login_link">
+                    <button class="login">LOG IN</button>
+                </a>
+                <a href="" class="cart_link">
+                    <button class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </a>
+            </div>
+        </header>
+        <!-- form -->
+        <section class="form_section">
+            <div class="form_container">
+                <h2>CONTACT US</h2>
+                <form action="" method="get" class="contact_form">
+                    <div class="info">
+                        <input type="text" name="name" class="info_input" placeholder="Name" required />
+                        <input type="email" name="email" class="info_input" placeholder="Email" required />
+                    </div>
+                    <div>
+                        <p class="question">I have a delivery question about my order</p>
+                    <div class="radio">
+                        <div class="radio_divs">
+                            <input type="radio" id="radio1" name="option" value="I did not receive my order" />
+                            <label for="radio1" class="label_radio">I did not receive my order</label>
+                        </div>
+                        <div class="radio_divs">
+                            <input type="radio" id="radio2" name="option"
+                                value="My order is incorrect or arrived damaged" />
+                            <label for="radio2" class="label_radio">My order is incorrect or arrived damaged</label>
+                        </div>
+                        <div class="radio_divs">
+                            <input type="radio" id="radio3" name="option" value="Cancel my order"/>
+                            <label for="radio3" class="label_radio">Cancel my order</label>
+                        </div>
+                        <div class="radio_divs">
+                            <input type="radio" id="radio4" name="option" value="Change my shipping address"/>
+                            <label for="radio4" class="label_radio">Change my shipping address</label>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="textarea_container">
+                        <label for="message_textarea" class="label_textarea">Please provide more details below.</label>
+                        <textarea name="message" id="message_textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="checkbox_container">
+                        <input type="checkbox" id="checkbox" name="checkbox"/>
+                    <label for="checkbox" class="label_chackbox">
+                        I want to receive the newsletter
+                    </label>
+                    </div>
+                    <button type="submit" class="submit">SEND</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
